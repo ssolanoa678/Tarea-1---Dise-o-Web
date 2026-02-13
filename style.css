@@ -1,16 +1,8 @@
-/* =========================
-   RESET BÁSICO
-========================= */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* =========================
-   BASE GENERAL
-========================= */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -21,41 +13,44 @@ body {
   color: #222;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-.site-logo img {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem auto;
-}
-
-.site-logo img {
-  width: 140px;
-  border-radius: 30px;
-}
-
-
-header {
+/* HEADER */
+.site-header {
   background-color: #f5f1e8;
-  text-align: center;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  max-width: 3100px;
+  margin: 0 auto;
 }
 
-header h1 {
+.header-logo {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+}
+.header-text {
+  text-align: center;
+  flex: 1 1 320px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
   color: #222;
 }
 
-header p {
+.site-header p {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
-/* =========================
-   GALERÍA (CONTENEDOR)
-========================= */
-
+/*GALERÍA*/
 #gallery {
   position: relative;
   width: 90%;
@@ -73,8 +68,6 @@ header p {
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-
-
 #gallery article {
   flex: 1 1 400px;
 }
@@ -87,20 +80,14 @@ header p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* =========================
-   FIGCAPTION
-========================= */
-
+/*FIGCAPTION*/
 figcaption {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   text-align: center;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/*FOOTER*/
 footer {
   text-align: center;
   padding: 2rem 1rem;
